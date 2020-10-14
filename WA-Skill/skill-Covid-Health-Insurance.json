@@ -1,0 +1,1035 @@
+{
+  "intents": [
+    {
+      "intent": "CovidInsurancePolicies",
+      "examples": [
+        {
+          "text": "Are there any Covid Insurance Policies",
+          "mentions": [
+            {
+              "entity": "Insurance",
+              "location": [
+                20,
+                29
+              ]
+            },
+            {
+              "entity": "covid",
+              "location": [
+                14,
+                19
+              ]
+            },
+            {
+              "entity": "policies",
+              "location": [
+                30,
+                38
+              ]
+            }
+          ]
+        },
+        {
+          "text": "covid 19"
+        },
+        {
+          "text": "I am looking for Covid Insurance Policies.",
+          "mentions": [
+            {
+              "entity": "Insurance",
+              "location": [
+                23,
+                32
+              ]
+            },
+            {
+              "entity": "covid",
+              "location": [
+                17,
+                22
+              ]
+            },
+            {
+              "entity": "policies",
+              "location": [
+                33,
+                41
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am looking for Covid Policies.",
+          "mentions": [
+            {
+              "entity": "covid",
+              "location": [
+                17,
+                22
+              ]
+            },
+            {
+              "entity": "policies",
+              "location": [
+                23,
+                31
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am looking for health Insurance policies for Covid",
+          "mentions": [
+            {
+              "entity": "Insurance",
+              "location": [
+                24,
+                33
+              ]
+            },
+            {
+              "entity": "covid",
+              "location": [
+                47,
+                52
+              ]
+            },
+            {
+              "entity": "policies",
+              "location": [
+                34,
+                42
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I want to cover me and my family for corona",
+          "mentions": [
+            {
+              "entity": "Insurance",
+              "location": [
+                10,
+                15
+              ]
+            },
+            {
+              "entity": "covid",
+              "location": [
+                37,
+                43
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I want to cover me and my family for Covid-19",
+          "mentions": [
+            {
+              "entity": "Insurance",
+              "location": [
+                10,
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Gender",
+      "examples": [
+        {
+          "text": "Female"
+        },
+        {
+          "text": "Male"
+        },
+        {
+          "text": "Other"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Insurance_View_Policy",
+      "examples": [
+        {
+          "text": "Can I view the details of the agreement?"
+        },
+        {
+          "text": "Can you please show me my insurance policy?"
+        },
+        {
+          "text": "How do I download the policy to see?"
+        },
+        {
+          "text": "I want to look at policy terms."
+        },
+        {
+          "text": "I would prefer to view the contents of the contract"
+        },
+        {
+          "text": "List all risks"
+        },
+        {
+          "text": "Please show me my policy"
+        },
+        {
+          "text": "Pull up my policy please"
+        },
+        {
+          "text": "Read contract"
+        },
+        {
+          "text": "See contract"
+        },
+        {
+          "text": "Show policy"
+        },
+        {
+          "text": "Tell me everything is covered"
+        },
+        {
+          "text": "Terms and conditions info."
+        },
+        {
+          "text": "View policy"
+        },
+        {
+          "text": "What is link to download insurance policy?"
+        },
+        {
+          "text": "What is the expiration date of my health insurance?"
+        },
+        {
+          "text": "What is the start date of insurance?"
+        },
+        {
+          "text": "What's in my plan?"
+        },
+        {
+          "text": "What's the full amount of things which the plan covers?"
+        },
+        {
+          "text": "Where is the contract for insurance?"
+        }
+      ],
+      "description": "View the details of a policy."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "city",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bangalore",
+          "synonyms": [
+            "Bengaluru"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Delhi",
+          "synonyms": [
+            "Dilli",
+            "New Delhi "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gurgaon",
+          "synonyms": [
+            "Gurugram"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hyderabad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jalandhar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kanpur",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lucknow",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ludhiana",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": [
+            "Bombay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Patna",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "covid",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "corona",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Covid",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Covid19",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Covid-19",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "diseases",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Arthritis",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Diabetes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Heart Attack",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PCOD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Thyroid",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gender",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Female",
+          "synonyms": [
+            "female"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Male",
+          "synonyms": [
+            "male"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Other",
+          "synonyms": [
+            "other"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Insurance",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cover",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Health Insurance",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Insurance",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "person",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cinnamon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Joe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Neha",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vishesh",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "policies",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Policies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Policy",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1598848956889",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1598942836836",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1598942836862",
+      "previous_sibling": "handler_4_1598942836862"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter your name"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1598847205863",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598847205890",
+      "previous_sibling": "handler_9_1598847205890"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please Enter your age "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1598847263015",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598847263033",
+      "previous_sibling": "handler_8_1598847263033"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1598848651355",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598848651374",
+      "previous_sibling": "handler_6_1598848651374"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1598844203453",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598849442935",
+      "previous_sibling": "node_7_1598844206526"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1598849745540",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598849745565",
+      "previous_sibling": "handler_9_1598849745565"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1598844210312",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598850160381",
+      "previous_sibling": "node_9_1598942798189"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1598844206526",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_2_1598850190896",
+      "previous_sibling": "node_3_1598844210312"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598849000694",
+      "context": {
+        "disease": "@diseases"
+      },
+      "conditions": "@diseases",
+      "event_name": "input",
+      "dialog_node": "handler_3_1598849000719"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598942867095",
+      "context": {
+        "city": "@city"
+      },
+      "conditions": "@city",
+      "event_name": "input",
+      "dialog_node": "handler_3_1598942867109"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1598942836836",
+      "context": {
+        "gender": "@gender"
+      },
+      "conditions": "@gender",
+      "event_name": "input",
+      "dialog_node": "handler_4_1598942836862"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1598848651355",
+      "context": {
+        "numberoffamilymembers": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1598848651374"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598849000694",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1598849000719",
+      "previous_sibling": "handler_3_1598849000719"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598847263015",
+      "context": {
+        "age": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_8_1598847263033"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1598847205863",
+      "context": {
+        "username": "@person"
+      },
+      "conditions": "@person",
+      "event_name": "input",
+      "dialog_node": "handler_9_1598847205890"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1598849745540",
+      "context": {
+        "Phonenumber": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_9_1598849745565"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598942867095",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1598942867109",
+      "previous_sibling": "handler_3_1598942867109"
+    },
+    {
+      "type": "frame",
+      "title": "Summarize the Information Taken by the bot.",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi $username, I hope the information entered by you is correct. "
+              },
+              {
+                "text": "Summarizing it :"
+              },
+              {
+                "text": "Age: $age;"
+              },
+              {
+                "text": "  City : $city  ; Medical History/Condition : $disease. "
+              },
+              {
+                "text": " Phone Number : $Phonenumber ;  Gender : $gender "
+              },
+              {
+                "text": "and you have $numberoffamilymembers members "
+              },
+              {
+                "text": "And Depending on the information given by you, here are some recommendations for the policy. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "@diseases",
+      "dialog_node": "node_10_1598848956889",
+      "previous_sibling": "node_10_1598942610269"
+    },
+    {
+      "type": "folder",
+      "title": "Take personal info",
+      "conditions": "@person",
+      "dialog_node": "node_10_1598942610269",
+      "previous_sibling": "node_2_1598843337257"
+    },
+    {
+      "type": "frame",
+      "title": "Looking for Covid Insurance Policies.",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sure! First I would like to know your personal details. May I Know your Name, please?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "@covid && @Insurance || @policies",
+      "dialog_node": "node_2_1598843337257",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Ask Gender ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter your Gender: Male, Female or Other "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1598844206526",
+      "conditions": "@sys-number > 200",
+      "dialog_node": "node_3_1598844210312"
+    },
+    {
+      "type": "frame",
+      "title": "Ask Phone Number ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter your 10-digit Phone Number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1598844203453",
+      "conditions": "@sys-number < 100",
+      "dialog_node": "node_7_1598844206526"
+    },
+    {
+      "type": "frame",
+      "title": "Ask for Medical Conditions",
+      "output": {
+        "generic": [
+          {
+            "title": "Do you have any medical condition or History from the following??  ",
+            "options": [
+              {
+                "label": "Heart Attack ",
+                "value": {
+                  "input": {
+                    "text": "Heart Attack "
+                  }
+                }
+              },
+              {
+                "label": "Diabetes",
+                "value": {
+                  "input": {
+                    "text": "Diabetes"
+                  }
+                }
+              },
+              {
+                "label": "Thyroid",
+                "value": {
+                  "input": {
+                    "text": "Thyroid"
+                  }
+                }
+              },
+              {
+                "label": "PCOD",
+                "value": {
+                  "input": {
+                    "text": "PCOD"
+                  }
+                }
+              },
+              {
+                "label": "Arthritis",
+                "value": {
+                  "input": {
+                    "text": "Arthritis"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1598848009696",
+      "conditions": "@sys-number",
+      "dialog_node": "node_7_1598848506285"
+    },
+    {
+      "type": "standard",
+      "title": "Search_Skill",
+      "output": {
+        "generic": [
+          {
+            "query": "",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_10_1598848956889",
+      "conditions": "#Insurance_View_Policy",
+      "dialog_node": "node_7_1599456423361"
+    },
+    {
+      "type": "frame",
+      "title": "Ask-ageGroup",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter your age"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1598942610269",
+      "context": {},
+      "conditions": "@person",
+      "dialog_node": "node_8_1598844203453"
+    },
+    {
+      "type": "frame",
+      "title": "Ask for Family members ",
+      "output": {
+        "generic": [
+          {
+            "title": "How many family members do you have? ",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "More than 4 ",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1598942798189",
+      "conditions": "@city",
+      "dialog_node": "node_8_1598848009696"
+    },
+    {
+      "type": "frame",
+      "title": "As city",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter your City"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1598844210312",
+      "conditions": "@gender",
+      "dialog_node": "node_9_1598942798189"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598848506285",
+      "variable": "$numberoffamilymembers",
+      "dialog_node": "slot_4_1598848651355"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1598942798189",
+      "variable": "$gender",
+      "dialog_node": "slot_5_1598942836836",
+      "previous_sibling": "node_8_1598848009696"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598844206526",
+      "variable": "$age",
+      "dialog_node": "slot_6_1598847263015",
+      "previous_sibling": "handler_2_1598850190896"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1598848956889",
+      "variable": "$disease",
+      "dialog_node": "slot_6_1598849000694",
+      "previous_sibling": "node_7_1599456423361"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1598848009696",
+      "variable": "$city",
+      "dialog_node": "slot_6_1598942867095",
+      "previous_sibling": "node_7_1598848506285"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1598844203453",
+      "variable": "$username",
+      "dialog_node": "slot_7_1598847205863",
+      "previous_sibling": "handler_1_1598849442935"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1598844210312",
+      "variable": "$Phonenumber",
+      "dialog_node": "slot_7_1598849745540",
+      "previous_sibling": "handler_1_1598850160381"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Covid-Health-Insurance",
+  "language": "en",
+  "description": ""
+}
