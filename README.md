@@ -44,24 +44,24 @@ Create an IBM Cloud Account
 - Go to IBM Cloud Resource list and click on the Watson Assistant service instance created in above steps.
 - On the Watson Assistant Resource list page, click `Launch Watson Assistant`.
 
-![LaunchTool](images/Launch-Assistant.png)
+![LaunchTool](doc/src/images/Launch-Assistant.png)
 
 - Click `Skills` tab in the side bar.
 
-![SkillsTab](images/Create-Skill.png)
+![SkillsTab](doc/src/images/Create-Skill.png)
 
 - Click the `Create skill` button.
 - Select the `Dialog skill` box
 - Click the `Next` button.
 - Select the `Import skill` tab.
 
-![ImportSkill](images/Import-SKill.png)
+![ImportSkill](doc/src/images/Import-SKill.png)
 
 - Click on `Choose JSON file`.
 - Browse to the cloned repository parent folder -> WA-Skill.
 - Select `skill-Covid-Health-Insurance.json` and click `Open`.
 
-![ImportAWorkspace](images/import_json_file.png)
+![ImportAWorkspace](doc/src/images/import_json_file.png)
 
 ## 3. Setting up `Watson Discovery` 
 ### 3.1  Create `Watson Discovery` Service instance
@@ -75,10 +75,10 @@ Create an IBM Cloud Account
 ### 3.2 Create Collection in Watson Discovery
 
 - Click `Launch Watson Discovery` 
-![LaunchTool](images/Launch-Discovery.png)
+![LaunchTool](doc/src/images/Launch-Discovery.png)
 
 - Click `New Collection` and name it as `Covid-Insurance Policies.`
-![Create](images/Create-Collection.png)
+![Create](doc/src/images/Create-Collection.png)
 
 - Click on `Upload Documents` and upload the policy documents in the Data Folder. 
 
@@ -88,12 +88,12 @@ Create an IBM Cloud Account
 
 
 - Click the `Create Search skill` button. And name it as `Covid-Discovery-insurance-skill`
-![SearchSkillsTab](images/Create-Search-Skill.png)
+![SearchSkillsTab](doc/src/images/Create-Search-Skill.png)
 
 - Select the `Discovery Instance` created in the above step(section 3.1). And Choose `Covid-Insurance Policies` collection-created above in section 3.2.
 
 - Click on the `Covid-Discovery-insurance-skill`, you just created and configure the `Display Card`. 
-![Display results from Discovery](images/DisplayCard.png)
+![Display results from Discovery](doc/src/images/DisplayCard.png)
 
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
@@ -102,7 +102,7 @@ Create an IBM Cloud Account
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
 - Click on `Add Integeration ` on the right side and choose Web Chat Integeration. And Click on `Embed`
-![Embed Integeration ID](images/DisplayCard.png)
+![Embed Integeration ID](doc/src/images/DisplayCard.png)
 
 * In the repo `template/UI.html`, under line 418, update the copied integration ID within the script tag
 
