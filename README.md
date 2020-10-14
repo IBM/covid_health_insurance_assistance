@@ -22,15 +22,15 @@ When user has completed the pattern he will-
 * [IBM Cloud Account](http://cloud.ibm.com/)
 
 ## Steps
-* Setup IBM CLOUD account.
-* Create Watson Assistant.
-  * Create Dialog Skill.
-* Set up Discovery Service.
-  * Create a new Collection. 
-  * Upload the Documents.
-* Integerating `Search Skill` in Watson Assistant. 
-* Copy Integration ID and update to Flask.  
-* Run the flask App.
+* [Setup IBM CLOUD account](#1-setup-ibm-cloud-account)
+* [Create Watson Assistant.](#21-create-watson-assistant-service-instance)
+  * [Create Dialog Skill.](#22-create-dialog-skill)
+* [Set up Discovery Service.](#3-setting-up-watson-discovery)
+  * [Create Watson Discovery Service instance](#31--create-watson-discovery-service-instance)
+  * [Create a new Collection. ](#32-create-collection-in-watson-discovery)
+* [Create Search Skill and connect to the Discovery service](#4-create-search-skill-and-connect-to-the-discovery-service)
+* [Copy Integration ID and update to Flask.  ](#5-copy-integration-id-and-update-to-flask)
+* [Run the flask App.](#6-run-the-flask-app)
 
 ### 1. Setup `IBM CLOUD` account.
 Create an IBM Cloud Account 
@@ -67,7 +67,6 @@ Create an IBM Cloud Account
 - Browse to the cloned repository parent folder -> WA-Skill.
 - Select `skill-Covid-Health-Insurance.json` and click `Open`.
 
-![ImportAWorkspace](doc/src/images/import_json_file.png)
 
 ### 3. Setting up `Watson Discovery` 
 ### 3.1  Create `Watson Discovery` Service instance
