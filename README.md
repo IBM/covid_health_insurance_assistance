@@ -127,7 +127,14 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### Sample Output
+## Sample Output
+
+* The UI will show you the various Insurance Policies that are offered
+
+  ![](doc/src/images/sample-1.png)
+  
+  ![](doc/src/images/sample-2.png)
+
 
 * The UI will show you the various Insurance Policies that are offered
 
