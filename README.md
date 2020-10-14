@@ -131,8 +131,6 @@ python app.py
 
 * The UI will show you the various Insurance Policies that are offered
 
-[Output](doc/src/images/covid.gif)
-* In the bottom right, you will have the integrated chatbot interface from Watson Assistant + Discovery
+![Output](doc/src/images/covid.gif)
 
- 
   
