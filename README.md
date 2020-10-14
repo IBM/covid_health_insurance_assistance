@@ -11,6 +11,12 @@ When user has completed the pattern he will-
 
 ![](doc/src/images/Arch.png)
 
+1. Upload Documents on the Watson Discovery-to train the model using SDU on various Policy Documents. 
+2. Watson Assistant will interact with the User to take personal details.
+3. After collecting personal information, search skill is initiated.
+4. The results will be fetched from the Watson Discovery-where the model has been trained on various Policy Documents. 
+5. Showcase the results to the user.
+
 ## Pre Requisite
 
 * [IBM Cloud Account](http://cloud.ibm.com/)
@@ -26,11 +32,11 @@ When user has completed the pattern he will-
 * Copy Integration ID and update to Flask.  
 * Run the flask App.
 
-## 1. Setup IBM CLOUD account.
+### 1. Setup `IBM CLOUD` account.
 Create an IBM Cloud Account 
 - Login to [IBM CLOUD](https://cloud.ibm.com/login)
 
-## 2. Setting up `Watson Assistant`
+### 2. Setting up `Watson Assistant`
 
 ### 2.1 Create `Watson Assistant` service instance
 - Click this [link](https://cloud.ibm.com/catalog/services/watson-assistant) to create Watson assistant service.
@@ -63,7 +69,7 @@ Create an IBM Cloud Account
 
 ![ImportAWorkspace](doc/src/images/import_json_file.png)
 
-## 3. Setting up `Watson Discovery` 
+### 3. Setting up `Watson Discovery` 
 ### 3.1  Create `Watson Discovery` Service instance
 - Click this [link](https://cloud.ibm.com/catalog/services/discovery) to create Watson Discovery Service.
 - Enter the service name as `Watson Discovery-In`. You can choose to enter any name you like.
@@ -83,7 +89,7 @@ Create an IBM Cloud Account
 - Click on `Upload Documents` and upload the policy documents in the Data Folder. 
 
 
-## 4. Create Search Skill and connect to the Discovery service 
+### 4. Create Search Skill and connect to the Discovery service 
 - Click `Skills` tab in the side bar.
 
 
@@ -98,7 +104,7 @@ Create an IBM Cloud Account
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
 
-## 5. Copy integration ID and update to Flask 
+### 5. Copy integration ID and update to Flask 
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
 - Click on `Add Integeration ` on the right side and choose Web Chat Integeration. And Click on `Embed`
@@ -108,7 +114,7 @@ Create an IBM Cloud Account
 
 ![](doc/src/images/integration_ID.png)
 
-## 6. Run the Flask App
+### 6. Run the Flask App
 
 * Navigate to cloned repo folder
 
@@ -122,11 +128,12 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## Sample Output
+### Sample Output
 
 * The UI will show you the various Insurance Policies that are offered
-![Output](doc/src/images/covid.gif)
 
+
+* In the bottom right, you will have the integrated chatbot interface from Watson Assistant + Discovery
 
  
   
