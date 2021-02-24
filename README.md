@@ -9,7 +9,7 @@ When user has completed the pattern he will-
 * Take personal details from the user using `Context variables` and use them in the Search Query to get personalised results. 
 * User will learn how to integrate insights generated with Discovery back to Assistant.
 
-![](doc/src/images/Arch.png)
+![](doc/src/images/Architecture.png)
 
 1. Upload Documents on the Watson Discovery-to train the model using SDU on various Policy Documents. 
 2. Watson Assistant will interact with the User to take personal details.
