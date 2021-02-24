@@ -1,4 +1,4 @@
-# Insurance Policy Assistant
+# Build an assistant to evaluate various health insurance policies
 
 This Code Pattern will demonstrate a methodology to build an assistant which can answer queries regarding the Covid Insurance Policies of various companies. And it will also compare the policies and top-up related queries given by them. In Watson Assistant, we will create Dialog skill and using the search skill capability  develop a model in Watson Discovery that will understand the policies and provide an interactive interface to the user. This application will come in handy for various insurance brokers and also a layman who wants to know and compare the policies of various companies.
 
@@ -22,15 +22,15 @@ When user has completed the pattern he will-
 * [IBM Cloud Account](http://cloud.ibm.com/)
 
 ## Steps
-* [Setup IBM CLOUD account](#1-setup-ibm-cloud-account)
-* [Create Watson Assistant.](#21-create-watson-assistant-service-instance)
-  * [Create Dialog Skill.](#22-create-dialog-skill)
-* [Set up Discovery Service.](#3-setting-up-watson-discovery)
-  * [Create Watson Discovery Service instance](#31--create-watson-discovery-service-instance)
-  * [Create a new Collection. ](#32-create-collection-in-watson-discovery)
-* [Create Search Skill and connect to the Discovery service](#4-create-search-skill-and-connect-to-the-discovery-service)
-* [Copy Integration ID and update to Flask.  ](#5-copy-integration-id-and-update-to-flask)
-* [Run the flask App.](#6-run-the-flask-app)
+1. [Setup IBM CLOUD account](#1-setup-ibm-cloud-account)
+1. [Create Watson Assistant.](#21-create-watson-assistant-service-instance)
+   1. [Create Dialog Skill.](#22-create-dialog-skill)
+1. [Set up Discovery Service.](#3-setting-up-watson-discovery)
+   1. [Create Watson Discovery Service instance](#31--create-watson-discovery-service-instance)
+   1. [Create a new Collection. ](#32-create-collection-in-watson-discovery)
+1. [Create Search Skill and connect to the Discovery service](#4-create-search-skill-and-connect-to-the-discovery-service)
+1. [Copy Integration ID and update to Flask.  ](#5-copy-integration-id-and-update-to-flask)
+1. [Run the flask App.](#6-run-the-flask-app)
 
 ### 1. Setup `IBM CLOUD` account.
 Create an IBM Cloud Account 
