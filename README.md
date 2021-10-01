@@ -42,7 +42,6 @@ Create an IBM Cloud Account
 - Click this [link](https://cloud.ibm.com/catalog/services/watson-assistant) to create Watson assistant service.
 - Enter the service name as `Watson Assistant-CovidInsurancebot`. You can choose to enter any name you like.
 - Ensure you select the right region, organisation and space.
-- Under `Pricing Plans`, select `Lite` plan.
 - Click `Create`.
 - Watson Asistant service instance should get created.
 
@@ -89,16 +88,22 @@ Create an IBM Cloud Account
 
 
 ### 4. Create Search Skill and connect to the Discovery service 
-- Click `Skills` tab in the side bar.
 
+- Click `Create Skills` tab in Watson Assistant.
 
-- Click the `Create Search skill` button. And name it as `Covid-Discovery-insurance-skill`
-![SearchSkillsTab](doc/src/images/Create-Search-Skill.png)
+- Select `Search Skill`.
+
+![SearchSkillsTab](doc/src/images/Create-Search-Skill-new.png)
+
+- Give a name in `Add Search Skill` section and click on `Continue`.
+
+![AddSearchSkill](doc/src/images/Add-Search-Skill.png)
 
 - Select the `Discovery Instance` created in the above step(section 3.1). And Choose `Covid-Insurance Policies` collection-created above in section 3.2.
 
 - Click on the `Covid-Discovery-insurance-skill`, you just created and configure the `Display Card`. 
-![Display results from Discovery](doc/src/images/DisplayCard.png)
+
+![Display results from Discovery](doc/src/images/DisplayCard-new.png)
 
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
@@ -106,8 +111,9 @@ Create an IBM Cloud Account
 ### 5. Copy integration ID and update to Flask 
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
-- Click on `Add Integeration ` on the right side and choose Web Chat Integeration. And Click on `Embed`
-![Embed Integeration ID](doc/src/images/DisplayCard.png)
+- Click on `Add Integeration ` on the right side and choose Web Chat Integeration. And Click on `Embed`.
+
+![Embed Integeration ID](doc/src/images/DisplayCardAssistant.gif)
 
 * In the repo `template/UI.html`, under line 418, update the copied integration ID within the script tag
 
