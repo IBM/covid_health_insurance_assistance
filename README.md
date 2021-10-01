@@ -105,9 +105,6 @@ Create an IBM Cloud Account
 
 ![Display results from Discovery](doc/src/images/DisplayCard-new.png)
 
-- Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
-
-
 ### 5. Copy integration ID and update to Flask 
 - Click `Assistant` tab in the side bar. Select the Assistant Created and link the Search skill `Covid-Discovery-insurance-skill` with this Assistant.
 
